@@ -35,7 +35,7 @@ export default class Main extends Component {
       <React.Fragment>
         <View style={styles.container}>
           <View style={styles.header}>
-            <Text style={styles.headerText}>TO DO LIST</Text>
+            <Text style={styles.headerText}>ToDo!</Text>
           </View>
         </View>
 
@@ -60,7 +60,7 @@ export default class Main extends Component {
             onChangeText={noteText => this.setState({ noteText })}
             value={this.state.noteText}
             placeholder="note"
-            placeholderTextColor="white"
+            placeholderTextColor="black"
           />
         </KeyboardAvoidingView>
       </React.Fragment>
@@ -90,16 +90,18 @@ const styles = StyleSheet.create({
   //   flex: 1
   // },
   header: {
-    backgroundColor: "#ff7675",
+    backgroundColor: "#3498db",
     alignItems: "center",
     borderBottomWidth: 10,
-    borderBottomColor: "grey"
+    borderBottomColor: "black"
     // justifyContent: "center"
   },
   headerText: {
     color: "white",
     fontSize: 18,
-    padding: 25
+    padding: 25,
+    fontWeight: "500",
+    marginTop: 10
   },
   scrollContainer: {
     flex: 1
@@ -113,18 +115,18 @@ const styles = StyleSheet.create({
   },
   textInput: {
     alignSelf: "stretch",
-    color: "white",
+    color: "black",
     padding: 20,
-    backgroundColor: "black",
+    backgroundColor: "whitesmoke",
     borderTopWidth: 2,
-    borderTopColor: "grey"
+    borderTopColor: "black"
   },
   addButton: {
     // position: "absolute",
     // // zIndex: 11,
     // right: 20,
     // // bottom: 90,
-    backgroundColor: "#ff7675",
+    backgroundColor: "#3498db",
     width: 60,
     height: 60,
     borderRadius: 90 / 2,

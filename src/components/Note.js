@@ -22,18 +22,19 @@ const styles = StyleSheet.create({
   note: {
     padding: 20,
     borderBottomWidth: 2,
-    borderBottomColor: "#ff7675"
+    borderBottomColor: "#3498db"
   },
 
   noteDelete: {
     position: "absolute",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "lightblue",
+    backgroundColor: "#3498db",
     padding: 10,
     top: 10,
     bottom: 10,
-    right: 10
+    right: 10,
+    borderRadius: 5
   },
   noteDeleteText: {
     color: "white"
